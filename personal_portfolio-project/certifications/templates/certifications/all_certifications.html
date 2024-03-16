@@ -1,0 +1,16 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+<h1>Certifications</h1>
+
+{% for certification in certifications %}  
+<br>
+<h2>{{ certification.title }}</h2>
+<a href="{{ certification.url }}"><img src="{{ certification.image.url}}" alt="" width="200" height="200"></a>
+<br>
+<h5>{{ certification.date}}</h5>
+<br>
+<p>{{ certification.description|truncatechars:100 }}</p>
+<br>
+{% endfor %}
+
+{% endblock %}

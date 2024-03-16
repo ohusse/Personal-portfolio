@@ -1,0 +1,31 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+
+
+    <div class="row justify-content-center my-3">
+        <div class="col-5">
+            <img src="{% static 'portfolio/graaaaaad.jpg' %}" class="img-fluid" height="200" width="300">
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-3">
+        <div class="col-md-9 text-center">
+          <h1 id="hometext" class="font-weight-bold">Osama Hussein is an IT professional with a recent Computer Science degree and a great passion for netowrking and cybersecurity 😎🔒🔗💻.</h1>
+        </div>
+      </div>
+    
+    <div class="row justify-content-center my-3">
+        <div class="col-5">
+         {% for project in projects %}  
+        <img src="{{project.image.url}}" height="200" width="300">
+        <br>
+        {{ project.title }}
+        <br>
+        {{ project.description }}
+        </div>
+    </div>
+      
+{% endfor %}
+
+{% endblock %}
