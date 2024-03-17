@@ -5,7 +5,6 @@ class Certification(models.Model):
     date = models.DateField(editable=True)
     image = models.ImageField(upload_to='portfolio/images/certification')
     url = models.URLField(blank=True)
-    skills = models.TextField()
 
     def __str__(self):
         return self.title

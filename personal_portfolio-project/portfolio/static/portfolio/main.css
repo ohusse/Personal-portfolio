@@ -1,3 +1,145 @@
-html {
-    overflow-y: scroll; 
+html body {
+    background-color: #1d3353;
+    color:	#f9f8f8;
 }
+
+hr.section-divider {
+    border-top: 1px solid #2bbcbb; /* Your desired color */
+}
+
+.shadowed-div {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1); /* Adjust values as needed */
+}
+
+.navbar-nav .nav-link {
+    color: #f9f8f8; /* Your desired color */
+}
+.card {
+    width: 280px;
+    color: #1d3353;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%; 
+    }
+}
+
+
+.home-certification-card {
+    width: 280px; /* Set the width of each certification card for the home page */
+    height: auto; /* Set height to auto to allow content to determine height */
+}
+
+@media (max-width: 767px) {
+    .home-certification-card {
+        width: 100%; 
+    }
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f9f8f8; /* Your desired color */
+}
+
+
+
+
+*{
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.ibm-plex sans condensed-thin {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex sans condensed-extralight {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex sans condensed-light {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex sans condensed-regular {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex sans condensed-medium {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex sans condensed-semibold {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex sans condensed-bold {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex sans condensed-thin-italic {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex sans condensed-extralight-italic {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex sans condensed-light-italic {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex sans condensed-regular-italic {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex sans condensed-medium-italic {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex sans condensed-semibold-italic {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex sans condensed-bold-italic {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+} 

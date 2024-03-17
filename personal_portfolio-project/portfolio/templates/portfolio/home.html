@@ -2,30 +2,57 @@
 {% block content %}
 {% load static %}
 
-
-    <div class="row justify-content-center my-3">
-        <div class="col-5">
-            <img src="{% static 'portfolio/graaaaaad.jpg' %}" class="img-fluid" height="200" width="300">
+        <div class="row justify-content-center my-3">
+            <div class="col-5 d-flex justify-content-center shadowed-div">
+                <img src="{% static 'portfolio/graaaaaad.jpg' %}" class="img-fluid" height="200" width="300">
+            </div>
         </div>
-    </div>
 
-    <div class="row justify-content-center mb-3">
-        <div class="col-md-9 text-center">
-          <h1 id="hometext" class="font-weight-bold">Osama Hussein is an IT professional with a recent Computer Science degree and a great passion for netowrking and cybersecurity 😎🔒🔗💻.</h1>
-        </div>
-      </div>
-    
-    <div class="row justify-content-center my-3">
-        <div class="col-5">
-         {% for project in projects %}  
-        <img src="{{project.image.url}}" height="200" width="300">
-        <br>
-        {{ project.title }}
-        <br>
-        {{ project.description }}
-        </div>
-    </div>
-      
-{% endfor %}
+        <div class="row justify-content-center mb-3">
+            <div class="col-md-9 text-center">
+                <h1 id="hometext" class="font-weight-bold">Osama Hussein is an IT professional with a recent Computer Science degree and a great passion for networking and cybersecurity 😎🔒🔗💻.</h1>
+            </div>
+        </div>  
 
+        <!-- Section for Certifications -->
+        <hr class="section-divider">
+        <div class="row justify-content-center my-3">
+            <div class="col-10">
+                <h2 class="text-center mb-4"><a class="nav-link" href="{% url 'certifications:all_certifications' %}"" >Certifications</a></h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    {% for certification in certifications %}  
+                    <div class="col">
+                        <div class="card h-100 home-certification-card">
+                            <img src="{{ certification.image.url }}" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ certification.title }}</h5>
+                                <p class="card-text">{{ certification.date|date:'M d Y'|upper }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <hr class="section-divider">
+
+        <!-- Section for Projects -->
+        <div class="row justify-content-center my-3">
+            <div class="col-10">
+                <h2 class="text-center mb-4">Projects</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    {% for project in projects %}  
+                    <div class="col">
+                        <div class="card h-100 home-project-card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ project.title }}</h5>
+                                <p class="card-text">{{ project.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <hr class="section-divider">
 {% endblock %}
