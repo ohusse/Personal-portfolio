@@ -4,13 +4,13 @@
 
         <div class="row justify-content-center my-3">
             <div class="col-5 d-flex justify-content-center">
-                <img src="{% static 'portfolio/graaaaaad.jpg' %}" class="img-fluid" height="200" width="300">
+                <img src="{% static 'portfolio/graaaaaad.jpg' %}" class="img-fluid shadowed" height="200" width="300">
             </div>
         </div>
 
         <div class="row justify-content-center mb-3">
             <div class="col-md-9 text-center">
-                <h1 id="hometext" class="font-weight-bold">Osama Hussein is an IT professional with a recent Computer Science degree and a great passion for networking and cybersecurity 😎🔒🔗💻.</h1>
+                <h1 id="hometext" class="font-weight-bold">Osama Hussein is an IT professional with a recent Computer Science degree and a great passion for networking and cybersecurity. 😎🔒🔗💻</h1>
             </div>
         </div>  
 
@@ -23,7 +23,7 @@
                     {% for certification in certifications %}  
                     <div class="col">
                         <div class="card h-100 home-certification-card">
-                            <img src="{{ certification.image.url }}" class="card-img-top" alt="">
+                            <a class="nav-link" href="{% url 'certifications:all_certifications' %}"" ><img src="{{ certification.image.url }}" class="card-img-top" alt=""></a>
                             <div class="card-body">
                                 <h5 class="card-title">{{ certification.title }}</h5>
                                 <p class="card-text">{{ certification.date|date:'M d Y'|upper }}</p>

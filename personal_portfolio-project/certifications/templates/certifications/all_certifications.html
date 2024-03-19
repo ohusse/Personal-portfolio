@@ -5,7 +5,7 @@
 <h1 id="blogtitle" class="font-weight-bold text-center">Certifications</h1>
 
 <h3 class="text-center mb-5">Osama has attained {{ certifications.count }} certification{{ certifications.count|pluralize }}.</h3>
-
+<hr class="section-divider">
 <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% for certification in certifications %}
@@ -22,5 +22,6 @@
         {% endfor %}
     </div>
 </div>
+<hr class="section-divider">
 
 {% endblock %}

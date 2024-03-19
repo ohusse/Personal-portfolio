@@ -1,15 +1,26 @@
 html body {
+    padding: 20px;
     background-color: #1d3353;
     color:	#f9f8f8;
 }
 
 hr.section-divider {
-    border-top: 1px solid #bcffff /* Your desired color */
+  border-top: 1px solid whitesmoke; /* Your desired color */
+  box-shadow: 0px 4px 8px rgba(1, 1, 1, 1); 
+  margin-bottom: 50px;
+  margin-top: 50px; /* Add margin to the bottom of the hr */
 }
 
-.shadowed-div {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1); /* Adjust values as needed */
+hr.first-section-divider {
+  border-top: 1px solid whitesmoke; /* Your desired color */
+  box-shadow: 0px 4px 8px rgba(1, 1, 1, 1); 
+  margin-bottom: 50px;
 }
+
+.img-fluid.shadowed {
+  box-shadow: 0px 4px 8px rgb(5, 4, 4); 
+}
+
 
 .navbar-nav .nav-link {
     color: #bcffff; /* Your desired color */
@@ -22,6 +33,7 @@ hr.section-divider {
 .card {
     width: 280px;
     color: #1d3353;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 767px) {
@@ -32,8 +44,9 @@ hr.section-divider {
 
 
 .home-certification-card {
-    width: 280px; /* Set the width of each certification card for the home page */
-    height: auto; /* Set height to auto to allow content to determine height */
+    width: 280px; 
+    height: auto; 
+    margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
