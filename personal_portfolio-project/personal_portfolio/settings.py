@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog',
     'portfolio',
     'certifications',
+    'about_me'
 ]
 
 MIDDLEWARE = [
